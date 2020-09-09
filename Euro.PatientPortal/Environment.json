@@ -1,0 +1,202 @@
+{
+    "Projects": [
+        {
+            "Name": "Master",
+            "Portals": [
+			{
+                    "Name": "Viracor",
+                    "Url": "com.viracorqa.vma",
+                    "Users": [
+                        {
+							"Type" : "LABALERT",
+                            "Name": "ritikarani@eurofins.com",
+                            "Password": "Qwertyuiop@12345",
+                        }
+                    ]
+                },
+                {
+                    "Name": "Retailer",
+                    "Url": "https://retailers.bossrevolution.awsqa.idt.net/",
+                    "Users": [
+                        {
+                            "Type": "Retailer",
+                            "Name": "1142862477",
+                            "Password": "Password1",
+                            "StoreName": "master"
+                        },
+                        {
+                            "Type": "Agent",
+                            "Name": "1135228798",
+                            "Password": "Password1"
+                        },
+                        {
+                            "Type": "ParentRetailer",
+                            "Name": "1142862477",
+                            "Password": "Password1"
+                        }
+                    ]
+                }
+            ],
+            "DBs": [
+                {
+                    "Name": "PSF",
+                    "Host": "ex02qa04-vip.corp.idt.net",
+                    "User": "psro",
+                    "Password": "idtnet2phone",
+                    "Port": "1522",
+                    "ServiceName": "bossqa.db.idt.net",
+                    "Type": "Oracle"
+                }
+            ],
+            "APIs": [
+                {
+                    "Name": "REPORT",
+                    "Url": "https://mylabport-web-dev.azurewebsites.net/api/Report/"
+                }
+            ]
+        },
+        {
+            "Name": "Production",
+            "Portals": [
+                {
+                    "Name": "Retailer",
+                    "Url": "https://retailers.bossrevolution.com/",
+                    "Users": [
+                        {
+                            "Type": "Retailer",
+                            "Name": "",
+                            "Password": ""
+                        }
+                    ]
+                }
+            ],
+            "DBs": [
+                {
+                    "Name": "OneApp",
+                    "Host": "",
+                    "User": "",
+                    "Password": "",
+                    "Port": "",
+                    "ServiceName": "",
+                    "Type": "Oracle"
+                }
+            ],
+            "APIs": [
+                {
+                    "Name": "PSF",
+                    "Url": ""
+                }
+            ]
+        },
+        {
+            "Name": "MasterDev",
+            "Portals": [
+                {
+                    "Name": "Retailer",
+                    "Url": "https://internal-br1apprjqm-alb-1539436577.us-east-1.elb.amazonaws.com/",
+                    "Users": [
+                        {
+                            "Type": "Retailer",
+                            "Name": "1142862477",
+                            "Password": "Password1",
+                            "StoreName": "master"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Distributor",
+                    "Url": "https://distributors.bossrevolution.awsqa.idt.net/",
+                    "Users": [
+                        {
+                            "Type": "Distributor",
+                            "Name": "mdistrib",
+                            "Password": "Password1"
+                        }
+                    ]
+                },
+                {
+                    "Name": "BRMdeact",
+                    "Url": "http://eando.debit.idt.net/mvnomonitor/cgi-bin/BRMdeact.cgi/"
+                },
+                {
+                    "Name": "Sprint",
+                    "Url": "https://mvno.sprint.com/mvno/controller/Admin/showLogin",
+                    "Users": [
+                        {
+                            "Type": "Sprint",
+                            "Name": "IdtSHerrara",
+                            "Password": "Control123!"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Custcare",
+                    "Url": "https://qa1.web.idt.net/mis/sso/?ReturnURL=http://lwebqa03.ixtelecom.com/custcare/do/custCare",
+                    "Users": [
+                        {
+                            "Type": "Custcare",
+                            "Name": "selenium",
+                            "Password": "Selenium3456"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Bro",
+                    "Url": "https://{0}:{1}@bro.bossrevolution.awsqa.idt.net/",
+                    "Users": [
+                        {
+                            "Type": "Bro",
+                            "Name": "misqa2",
+                            "Password": "Summer2019"
+                        }
+                    ]
+                },
+                {
+                    "Name": "CPASAPI",
+                    "Url": "http://srapi-dev.qa-int.bossrow.net"
+                },
+                {
+                    "Name": "MTSOLR",
+                    "Url": "http://169.132.166.19:8080/solr/mtm"
+                },
+                {
+                    "Name": "SRSOLR",
+                    "Url": "http://169.132.166.19:8080/solr/srm"
+                }
+            ],
+            "DBs": [
+                {
+                    "Name": "PSF",
+                    "Host": "ex02qa04-vip.corp.idt.net",
+                    "User": "psf",
+                    "Password": "retaildv_psf",
+                    "Port": "1522",
+                    "ServiceName": "retldev.db.idt.net",
+                    "Type": "Oracle"
+                }
+            ],
+            "APIs": [
+                {
+                    "Name": "PSF",
+                    "Url": "http://psfoneapp.awsqa.idt.net/psf.svc"
+        }
+      ]
+    },
+    {
+      "Name": "UAT",
+      "Portals": [
+        {
+          "Name": "Retailer",
+          "Url": "https://rc-retailers.bossrevolution.com/",
+          "Users": [
+            {
+              "Type": "Retailer",
+              "Name": "",
+              "Password": ""
+            }
+          ]
+                }
+            ]
+        }
+    ]
+}

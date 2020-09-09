@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.10.1\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3AC4459C-811A-4878-9F9B-E27EA0DBD1CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Euro.Core.Automation</RootNamespace>
+    <AssemblyName>Euro.Core.Automation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Authors>IDT</Authors>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>Euro.Core.Automation.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\Euro.Core.Automation.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>Euro.Core.Automation.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Allure.Commons, Version=2.3.67.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Allure.Commons.2.3.67.1\lib\net45\Allure.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Allure.SpecFlowPlugin, Version=2.3.67.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.Allure.2.3.67.1\lib\net45\Allure.SpecFlowPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Appium.Net, Version=4.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Appium.WebDriver.4.1.1\lib\net45\Appium.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.3.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper, Version=7.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.7.1.0\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.4.2.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.4.2\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.4.2.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.4.2\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis">
+      <HintPath>..\packages\Google.Apis.1.30.0\lib\net45\Google.Apis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth">
+      <HintPath>..\packages\Google.Apis.Auth.1.30.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices">
+      <HintPath>..\packages\Google.Apis.Auth.1.30.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Core">
+      <HintPath>..\packages\Google.Apis.Core.1.30.0\lib\net45\Google.Apis.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Gmail.v1">
+      <HintPath>..\packages\Google.Apis.Gmail.v1.1.30.0.1062\lib\net45\Google.Apis.Gmail.v1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices">
+      <HintPath>..\packages\Google.Apis.1.30.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.FileExtensions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Json.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Physical.2.0.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileSystemGlobbing.2.0.0\lib\netstandard2.0\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeTypesMap, Version=1.0.3.0, Culture=neutral, PublicKeyToken=1b320cc08ad5aa89, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeTypesMap.1.0.3\lib\net45\MimeTypesMap.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.10\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.10.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.2.1100\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SeleniumExtras.PageObjects, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.PageObjects.3.11.0\lib\net45\SeleniumExtras.PageObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="StyleCop">
+      <HintPath>..\packages\StyleCop.5.0.0\lib\net40\StyleCop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Compression, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\System.Net.Http.4.3.3\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.4.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.2.3.1\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assert\CustomAssert.cs" />
+    <Compile Include="Assert\IAssertableComponent.cs" />
+    <Compile Include="Assert\SoftAssert.cs" />
+    <Compile Include="Component\BaseMobileComponent.cs" />
+    <Compile Include="Component\BaseComponent.cs" />
+    <Compile Include="Entities\AccountEntity.cs" />
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\LoginEntity.cs" />
+    <Compile Include="Exceptions\AttributeForEnumNotFoundException.cs" />
+    <Compile Include="Exceptions\FieldByNameNotFoundException.cs" />
+    <Compile Include="Exceptions\ScenarioContextKeyNotFoundException.cs" />
+    <Compile Include="Exceptions\SmartWaitTimeoutException.cs" />
+    <Compile Include="Page\Base\BaseLayout.cs" />
+    <Compile Include="Page\Base\BasePage.cs" />
+    <Compile Include="Component\CheckBoxActions.cs" />
+    <Compile Include="Component\CommonPageActions.cs" />
+    <Compile Include="Component\DivAsCheckboxActions.cs" />
+    <Compile Include="Component\RadioButtonActions.cs" />
+    <Compile Include="Component\SelectActions.cs" />
+    <Compile Include="Page\Base\BasePageSection.cs" />
+    <Compile Include="Page\MobileBase\MobileBasePageSection.cs" />
+    <Compile Include="Page\MobileBase\MobileBasePage.cs" />
+    <Compile Include="Portals\Environment\Environments.cs" />
+    <Compile Include="Portals\Hooks\BaseHook.cs" />
+    <Compile Include="Portals\Hooks\GlobalHooks.cs" />
+    <Compile Include="Portals\Hooks\RetailerPortalHooks.cs" />
+    <Compile Include="Portals\Hooks\ScenarioHooks.cs" />
+    <Compile Include="Portals\Pages\Bro\Components\LeftMenuComponent.cs" />
+    <Compile Include="Portals\Pages\Bro\Components\ManageProductsPage.cs" />
+    <Compile Include="Portals\Pages\Bro\DashboardPage.cs" />
+    <Compile Include="Portals\Pages\Bro\HomePages\BroHomePage.cs" />
+    <Compile Include="Portals\Pages\Bro\RetailersSearchPage.cs" />
+    <Compile Include="Portals\Pages\Common\ChromePrintPdfPage.cs" />
+    <Compile Include="Portals\Pages\Common\HomePages\HomePageFactory.cs" />
+    <Compile Include="Portals\Pages\Common\HomePages\IHomePage.cs" />
+    <Compile Include="Portals\Pages\Common\LoginPages\OneAppLoginPage.cs" />
+    <Compile Include="Portals\Pages\Common\LoginPages\LoginExecption.cs" />
+    <Compile Include="Portals\Pages\Distributor\Components\BRUniversityComponent.cs" />
+    <Compile Include="Portals\Pages\Distributor\Components\BRUniversityVerticalComponent.cs" />
+    <Compile Include="Portals\Pages\Distributor\Components\DistributorFactory.cs" />
+    <Compile Include="Portals\Pages\Distributor\Components\DistributorTabComponents.cs" />
+    <Compile Include="Portals\Pages\Distributor\Components\IDistributorComponent.cs" />
+    <Compile Include="Portals\Pages\Distributor\Components\ReportVerticalComponent.cs" />
+    <Compile Include="Portals\Pages\Distributor\Components\ToolComponent.cs" />
+    <Compile Include="Portals\Pages\Distributor\Components\ReportComponent.cs" />
+    <Compile Include="Portals\Pages\Distributor\Components\ToolVerticalComponent.cs" />
+    <Compile Include="Portals\Pages\Distributor\DistributorHomePage.cs" />
+    <Compile Include="Portals\Pages\DtcOneApp\Components\DtcOneAppFactory.cs" />
+    <Compile Include="Portals\Pages\DtcOneApp\Components\IDtcOneAppComponent.cs" />
+    <Compile Include="Portals\Pages\DtcOneApp\Components\MyAccountMenuComponent.cs" />
+    <Compile Include="Portals\Pages\DtcOneApp\Components\ServicesMenuComponent.cs" />
+    <Compile Include="Portals\Pages\DtcOneApp\Components\TopMenuComponent.cs" />
+    <Compile Include="Portals\Pages\DtcOneApp\HomePages\DtcOneAppHomePage.cs" />
+    <Compile Include="Portals\Pages\DtcOneApp\LoginPages\DtcOneAppLoginPage.cs" />
+    <Compile Include="Portals\Pages\Dtc\Components\TopMenu.cs" />
+    <Compile Include="Portals\Pages\Dtc\LoginPages\DTCLoginPage.cs" />
+    <Compile Include="Portals\Pages\Oasis\BrbBillsPage.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisRoute\OasisRouteNewCustomerComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisRoute\OasisRouteToolsComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisRoute\OasisRouteReturnsComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisRoute\OasisRoutePaymentsComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisRoute\OasisRouteConsigmentComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisRoute\OasisRouteSalesComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisRoute\OasisRouteTopMenuComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisUTA\CardTrackingComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisUTA\ReceiptsComponents.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\IOasisComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisFactory.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisUTA\ActivationsComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisUTA\AdminComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisUTA\SalesComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\Components\OasisUTA\TopMenuComponent.cs" />
+    <Compile Include="Portals\Pages\Oasis\HomePages\OasisRouteHomePage.cs" />
+    <Compile Include="Portals\Pages\Oasis\HomePages\OasisUTAHomePage.cs" />
+    <Compile Include="Portals\Pages\Oasis\LoginPages\OasisUTALoginPage.cs" />
+    <Compile Include="Portals\Pages\Oasis\SetFilterPopUp.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\BRUniversityComponent.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\IRetailerComponent.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\NotifyComponent.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\ProductVerticalComponent.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\ToolsComponent.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\ReportComponent.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\ReportVerticalComponent.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\RetailerFactory.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\RetailerTabComponent.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\ProductComponent.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\TopMenuComponent.cs" />
+    <Compile Include="Portals\Pages\Retailers\HomePages\AgentHomePage.cs" />
+    <Compile Include="Portals\Pages\Retailers\HomePages\RetailerHomePage.cs" />
+    <Compile Include="Portals\Pages\Common\LoginPages\ILoginPage.cs" />
+    <Compile Include="Portals\Pages\Common\LoginPages\LoginFactory.cs" />
+    <Compile Include="Portals\Pages\Retailers\LoginPages\RetailerLoginPage.cs" />
+    <Compile Include="Portals\Pages\Common\UserType.cs" />
+    <Compile Include="Portals\Pages\Retailers\Components\RetailerVerticalTabComponent.cs" />
+    <Compile Include="Portals\StepDefinitions\AlertSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\Bro\DashboardSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\Bro\LeftMenuSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\ChromePrintPdfPageSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\CommonSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\Distributors\DistributorCommonSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\DtcOneApp\DtcOneAppHomeSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\DtcOneApp\DtcOneAppLoginSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\DtcOneApp\TopMenuSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\LoginSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\Mvno\DbSteps\DataForActivatedDeviceSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\Oasis\OasisCommonSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\PdfSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\Retailers\RetailerCommonSteps.cs" />
+    <Compile Include="Portals\StepDefinitions\Retailers\TopMenuSteps.cs" />
+    <Compile Include="Portals\Utils\BroWaitHelper.cs" />
+    <Compile Include="Portals\Utils\CardTypeUtils.cs" />
+    <Compile Include="Portals\Utils\CountryUtils.cs" />
+    <Compile Include="Portals\Utils\Environment.cs" />
+    <Compile Include="Portals\Utils\OneAppLoginHelper.cs" />
+    <Compile Include="Portals\Utils\PortalPageTransporter.cs" />
+    <Compile Include="Portals\Pages\Common\PortalWeb.cs" />
+    <Compile Include="Portals\Utils\ReadingAndWritingFiles.cs" />
+    <Compile Include="Portals\Utils\StateUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Selenium\IDTBy.cs" />
+    <Compile Include="Selenium\IDTDefaultElementLocator.cs" />
+    <Compile Include="Selenium\IDTDefaultPageObjectMemberDecorator.cs" />
+    <Compile Include="Selenium\IDTFieldNameAttribute.cs" />
+    <Compile Include="Selenium\IDTFindByAllAttribute.cs" />
+    <Compile Include="Selenium\IDTFindByAttribute.cs" />
+    <Compile Include="Selenium\IDTFindBySequenceAttribute.cs" />
+    <Compile Include="Selenium\IDTPageFactory.cs" />
+    <Compile Include="Selenium\IDTWebDriverObjectProxy.cs" />
+    <Compile Include="Selenium\IDTWebElementListProxy.cs" />
+    <Compile Include="Selenium\IDTWebElementProxy.cs" />
+    <Compile Include="TestRail\APIClient.cs" />
+    <Compile Include="TestRail\APIException.cs" />
+    <Compile Include="TestRail\Attribute\TestRailCaseIdAttribute.cs" />
+    <Compile Include="TestRail\TestRailConstants.cs" />
+    <Compile Include="TestRail\TestRailHelper.cs" />
+    <Compile Include="TestRail\TestRailManager.cs" />
+    <Compile Include="Transformation\CommonFunctions.cs" />
+    <Compile Include="Transformation\CommonTrasformation.cs" />
+    <Compile Include="Transformation\Models\StringValue.cs" />
+    <Compile Include="Transformation\Transform.cs" />
+    <Compile Include="Transformation\TrasformationExtension.cs" />
+    <Compile Include="Utilities\API\APIManager.cs" />
+    <Compile Include="Utilities\API\GmailManager.cs" />
+    <Compile Include="Utilities\API\ServiceCreation.cs" />
+    <Compile Include="Utilities\AppConfigUtils.cs" />
+    <Compile Include="Utilities\CommonAction\ActionWithPage.cs" />
+    <Compile Include="Utilities\CommonAction\ActionWithElement.cs" />
+    <Compile Include="Utilities\CommonAction\ActionWaitUntil.cs" />
+    <Compile Include="Utilities\CommonAction\ActionWithShadowElement.cs" />
+    <Compile Include="Utilities\Context\FeatureContextManager.cs" />
+    <Compile Include="Utilities\Context\ScenarioContextManager.cs" />
+    <Compile Include="Utilities\DateTimePicker.cs" />
+    <Compile Include="Utilities\DateTimeUtils.cs" />
+    <Compile Include="Utilities\DB\DataBaseUtils.cs" />
+    <Compile Include="Utilities\DB\DBConnection.cs" />
+    <Compile Include="Utilities\DB\Queries\Mvno\MvnoActivationQueries.cs" />
+    <Compile Include="Utilities\Elements\AbstractPopup.cs" />
+    <Compile Include="Utilities\Elements\CheckBox.cs" />
+    <Compile Include="Utilities\Elements\DivAsRadioButton.cs" />
+    <Compile Include="Utilities\Elements\Enums\CheckBoxStateEnum.cs" />
+    <Compile Include="Utilities\Elements\DivAsCheckbox.cs" />
+    <Compile Include="Utilities\Elements\Interfaces\ICheckbox.cs" />
+    <Compile Include="Utilities\Elements\Interfaces\IGetWebElement.cs" />
+    <Compile Include="Utilities\Elements\Interfaces\IRadioButton.cs" />
+    <Compile Include="Utilities\Elements\RadioButton.cs" />
+    <Compile Include="Utilities\Elements\Select.cs" />
+    <Compile Include="Utilities\Elements\Table\BaseTable.cs" />
+    <Compile Include="Utilities\Elements\Interfaces\ITable.cs" />
+    <Compile Include="Utilities\Elements\Interfaces\ITableCell.cs" />
+    <Compile Include="Utilities\Elements\Interfaces\ITableRow.cs" />
+    <Compile Include="Utilities\Elements\Table\Table.cs" />
+    <Compile Include="Utilities\Elements\Table\TableCell.cs" />
+    <Compile Include="Utilities\Elements\Table\TableRow.cs" />
+    <Compile Include="Utilities\Extensions\DictionaryExtension.cs" />
+    <Compile Include="Utilities\Formatter\LineFormatter.cs" />
+    <Compile Include="Utilities\GenerartorPO\Component.cs" />
+    <Compile Include="Utilities\GenerartorPO\ComponentStorage.cs" />
+    <Compile Include="Utilities\GenerartorPO\HandlingResx.cs" />
+    <Compile Include="Utilities\Helpers\CreditCardHelper\CreditCardHelper.cs" />
+    <Compile Include="Utilities\Helpers\CssHelper\CssStyleHelper.cs" />
+    <Compile Include="Utilities\Helpers\DataBaseHelper\DataBaseName.cs" />
+    <Compile Include="Utilities\Helpers\DataBaseHelper\DataBaseOperationHelper.cs" />
+    <Compile Include="Utilities\Helpers\DataBaseHelper\Mvno\MvnoDataBaseRequestHelper.cs" />
+    <Compile Include="Utilities\Helpers\DataTableHelper\DataTableHelper.cs" />
+    <Compile Include="Utilities\Helpers\DialogModalMessageHelper\DialogMessageHelper.cs" />
+    <Compile Include="Utilities\Helpers\EntityHelper\EntityHelper.cs" />
+    <Compile Include="Utilities\Helpers\Enums\EnumsHelper.cs" />
+    <Compile Include="Utilities\Helpers\Enums\LocatorNameAttribute.cs" />
+    <Compile Include="Utilities\Helpers\Enums\ReflectionClassAttribute.cs" />
+    <Compile Include="Utilities\Helpers\Enums\StringValueAttribute.cs" />
+    <Compile Include="Utilities\Helpers\Enums\XpathParameterAttribute.cs" />
+    <Compile Include="Utilities\Helpers\ExcelHelper\ExcelHelper.cs" />
+    <Compile Include="Utilities\Helpers\Reflection\ReflectionHelper.cs" />
+    <Compile Include="Utilities\Helpers\StringHelper\StringHelper.cs" />
+    <Compile Include="Utilities\IO\FileAndFoldersAccess.cs" />
+    <Compile Include="Utilities\JsonManager\Api.cs" />
+    <Compile Include="Utilities\JsonManager\CreditCard.cs" />
+    <Compile Include="Utilities\JsonManager\DataBase.cs" />
+    <Compile Include="Utilities\JsonManager\EnvironmentManager.cs" />
+    <Compile Include="Utilities\JsonManager\FileManager.cs" />
+    <Compile Include="Utilities\JsonManager\ListProject.cs" />
+    <Compile Include="Utilities\JsonManager\Portal.cs" />
+    <Compile Include="Utilities\JsonManager\Project.cs" />
+    <Compile Include="Utilities\JsonManager\User.cs" />
+    <Compile Include="Utilities\LanguageManager.cs" />
+    <Compile Include="Utilities\Logger\Logging.cs" />
+    <Compile Include="Utilities\PdfUtils.cs" />
+    <Compile Include="Utilities\ResourceReader.cs" />
+    <Compile Include="Utilities\Screenshots\ScreenshotHelper.cs" />
+    <Compile Include="Utilities\SmartWait.cs" />
+    <Compile Include="Utilities\Utils.cs" />
+    <Compile Include="Utilities\WebDriverUtils.cs" />
+    <Compile Include="WebDriver\DriverFactory.cs" />
+    <Compile Include="WebDriver\DriverManager.cs" />
+    <Compile Include="WebDriver\MobileDriverManager.cs" />
+    <Compile Include="WebDriver\WebDriverManager.cs" />
+    <Compile Include="WebDriver\WrapperFactory\Android.cs" />
+    <Compile Include="WebDriver\WrapperFactory\Chrome.cs" />
+    <Compile Include="WebDriver\WrapperFactory\Edge.cs" />
+    <Compile Include="WebDriver\WrapperFactory\Firefox.cs" />
+    <Compile Include="WebDriver\WrapperFactory\IExplorer.cs" />
+    <Compile Include="WebDriver\WrapperFactory\IOs.cs" />
+    <Compile Include="WebDriver\WrapperFactory\MobileDriver.cs" />
+    <Compile Include="WebDriver\WrapperFactory\IDriver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="allureConfig.json" />
+    <None Include="AllureCustomCommandLine\allure-2.6.0.zip" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="client_secret.json" />
+    <None Include="Euro.Core.Automation.ruleset" />
+    <AdditionalFiles Include="stylecop.json" />
+    <None Include="packages.config" />
+    <None Include="categories.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Portals\Pages\Bro\LoginPages\" />
+    <Folder Include="Portals\StepDefinitions\Dtc\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Selenium.Chrome.WebDriver.2.35\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('..\packages\Selenium.Chrome.WebDriver.2.35\build\Selenium.Chrome.WebDriver.targets')" />
+  <Import Project="..\packages\Selenium.Firefox.WebDriver.0.19.1\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('..\packages\Selenium.Firefox.WebDriver.0.19.1\build\Selenium.Firefox.WebDriver.targets')" />
+  <Import Project="..\packages\Selenium.InternetExplorer.WebDriver.3.9\build\Selenium.InternetExplorer.WebDriver.targets" Condition="Exists('..\packages\Selenium.InternetExplorer.WebDriver.3.9\build\Selenium.InternetExplorer.WebDriver.targets')" />
+  <Import Project="..\packages\SpecFlow.2.3.1\build\SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.3.1\build\SpecFlow.targets')" />
+  <Import Project="..\packages\Selenium.Firefox.WebDriver.0.19.0\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('..\packages\Selenium.Firefox.WebDriver.0.19.0\build\Selenium.Firefox.WebDriver.targets')" />
+  <Import Project="..\packages\Selenium.InternetExplorer.WebDriver.3.6\build\Selenium.InternetExplorer.WebDriver.targets" Condition="Exists('..\packages\Selenium.InternetExplorer.WebDriver.3.6\build\Selenium.InternetExplorer.WebDriver.targets')" />
+  <Import Project="..\packages\Selenium.WebDriver.MicrosoftWebDriver.10.0.17134\build\Selenium.WebDriver.MicrosoftWebDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.MicrosoftWebDriver.10.0.17134\build\Selenium.WebDriver.MicrosoftWebDriver.targets')" />
+  <Import Project="..\packages\Selenium.Chrome.WebDriver.2.45\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('..\packages\Selenium.Chrome.WebDriver.2.45\build\Selenium.Chrome.WebDriver.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Selenium.Chrome.WebDriver.2.45\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Chrome.WebDriver.2.45\build\Selenium.Chrome.WebDriver.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

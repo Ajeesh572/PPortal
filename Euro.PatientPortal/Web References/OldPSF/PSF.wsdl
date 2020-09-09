@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PSF" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://rc-psfoneapp.awsqa.idt.net/PSF.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://rc-psfoneapp.awsqa.idt.net/PSF.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://rc-psfoneapp.awsqa.idt.net/PSF.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PSFCommon.MessageWSI" />
+      <xsd:import schemaLocation="http://rc-psfoneapp.awsqa.idt.net/PSF.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PSFCommon" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPSF_Process_InputMessage">
+    <wsdl:part name="parameters" element="tns:Process" />
+  </wsdl:message>
+  <wsdl:message name="IPSF_Process_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPSF_ProcessJSON_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessJSON" />
+  </wsdl:message>
+  <wsdl:message name="IPSF_ProcessJSON_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPSF_Refresh_InputMessage">
+    <wsdl:part name="parameters" element="tns:Refresh" />
+  </wsdl:message>
+  <wsdl:message name="IPSF_Refresh_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPSF_RefreshParallel_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshParallel" />
+  </wsdl:message>
+  <wsdl:message name="IPSF_RefreshParallel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshParallelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPSF_ProcessRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessRequest" />
+  </wsdl:message>
+  <wsdl:message name="IPSF_ProcessRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPSF_GetVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersion" />
+  </wsdl:message>
+  <wsdl:message name="IPSF_GetVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPSF">
+    <wsdl:operation name="Process">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPSF/Process" message="tns:IPSF_Process_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPSF/ProcessResponse" message="tns:IPSF_Process_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessJSON">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPSF/ProcessJSON" message="tns:IPSF_ProcessJSON_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPSF/ProcessJSONResponse" message="tns:IPSF_ProcessJSON_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Refresh">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPSF/Refresh" message="tns:IPSF_Refresh_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPSF/RefreshResponse" message="tns:IPSF_Refresh_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RefreshParallel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPSF/RefreshParallel" message="tns:IPSF_RefreshParallel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPSF/RefreshParallelResponse" message="tns:IPSF_RefreshParallel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPSF/ProcessRequest" message="tns:IPSF_ProcessRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPSF/ProcessRequestResponse" message="tns:IPSF_ProcessRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPSF/GetVersion" message="tns:IPSF_GetVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPSF/GetVersionResponse" message="tns:IPSF_GetVersion_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPSF" type="tns:IPSF">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Process">
+      <soap:operation soapAction="http://tempuri.org/IPSF/Process" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessJSON">
+      <soap:operation soapAction="http://tempuri.org/IPSF/ProcessJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Refresh">
+      <soap:operation soapAction="http://tempuri.org/IPSF/Refresh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshParallel">
+      <soap:operation soapAction="http://tempuri.org/IPSF/RefreshParallel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessRequest">
+      <soap:operation soapAction="http://tempuri.org/IPSF/ProcessRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVersion">
+      <soap:operation soapAction="http://tempuri.org/IPSF/GetVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PSF">
+    <wsdl:port name="BasicHttpBinding_IPSF" binding="tns:BasicHttpBinding_IPSF">
+      <soap:address location="http://rc-psfoneapp.awsqa.idt.net/PSF.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://rc-psfoneapp.awsqa.idt.net/PSF.svc?xsd=xsd2" filename="PSF.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://rc-psfoneapp.awsqa.idt.net/PSF.svc?disco" filename="PSF.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://rc-psfoneapp.awsqa.idt.net/PSF.svc?xsd=xsd0" filename="PSF0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://rc-psfoneapp.awsqa.idt.net/PSF.svc?xsd=xsd1" filename="PSF1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://rc-psfoneapp.awsqa.idt.net/PSF.svc?wsdl" filename="PSF.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://rc-psfoneapp.awsqa.idt.net/PSF.svc?xsd=xsd3" filename="PSF2.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

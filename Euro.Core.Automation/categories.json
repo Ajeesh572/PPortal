@@ -1,0 +1,15 @@
+﻿[
+  {
+    "name": "Skipped tests",
+    "matchedStatuses": [ "skipped", "ignored" ],
+    "traceRegex": ".*IgnoreException.*"
+  },
+  {
+    "name": "Product defects",
+    "matchedStatuses": [ "failed" ]
+  },
+  {
+    "name": "Test defects",
+    "matchedStatuses": [ "broken" ]
+  }
+]
