@@ -10,20 +10,6 @@ namespace Euro.Viracor.Labalert.PatientPortalAPI.Main
     //Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
     public class AddPatientReportInfo
     {
-        public string orderId { get; set; }
-
-        public DateTime orderDate { get; set; }
-
-        public string testName { get; set; }
-
-        public string bu { get; set; }
-
-        public object orderStatus { get; set; }
-
-        public object reportId { get; set; }
-
-        public object report { get; set; }
-
         public string firstName { get; set; }
 
         public string lastName { get; set; }
@@ -43,6 +29,16 @@ namespace Euro.Viracor.Labalert.PatientPortalAPI.Main
         public string addressLine1 { get; set; }
 
         public object addressLine2 { get; set; }
+
+        public string orderId { get; set; }
+
+        public DateTime orderDate { get; set; }
+
+        public string testName { get; set; }
+
+        public string bu { get; set; }
+
+        public object report { get; set; }
     }
 
     public class Root

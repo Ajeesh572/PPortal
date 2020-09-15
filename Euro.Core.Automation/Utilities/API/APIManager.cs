@@ -62,9 +62,10 @@ namespace Euro.Core.Automation.Utilities.API
         /// <param name="endpoint">the endpoint.</param>
         /// <param name="resource">the resource name e.g '/v2/RETV3/BR_US/recipients'</param>
         /// <returns>The response of the request</returns>
-        public static IRestResponse GetRequest(string endpoint, string resource)
+        public static IRestResponse GetRequest(string endpoint, string resource,string authorization)
         {
             RestRequest request = new RestRequest(resource, Method.GET);
+            request.AddHeader("Authorization", authorization);
             return GetRestClient(endpoint).Execute(request);
         }
     }

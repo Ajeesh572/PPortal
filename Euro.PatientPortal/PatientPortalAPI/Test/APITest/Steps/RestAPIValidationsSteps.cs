@@ -7,6 +7,7 @@ namespace Euro.Viracor.Labalert.PatientPortalAPI.Test.APITest.Steps
     using System;
     using Euro.Core.Automation.Transformation;
     using Euro.Core.Automation.Transformation.Models;
+    using Euro.Core.Automation.Utilities;
     using Euro.Core.Automation.Utilities.API;
     using Euro.Core.Automation.Utilities.JsonManager;
     using Euro.PatientPortal.PatientPortalAPI.Main.API.Common;
@@ -30,10 +31,8 @@ namespace Euro.Viracor.Labalert.PatientPortalAPI.Test.APITest.Steps
             aPRI.orderDate = DateTime.Parse(DateTime.Now.ToString("yyyy-MM-dd'T'HH:mm:ss.fffzzz"));
             aPRI.testName = $"Test: {DateTime.Now}";
             aPRI.bu = bu;
-            aPRI.orderStatus = null;
-            aPRI.reportId = null;
-            aPRI.firstName = CommonFunctions.GetRandomPhoneNumber();
-            aPRI.lastName = CommonFunctions.GetRandomPhoneNumber();
+            aPRI.firstName = Utils.GenerateRandomString(8);
+            aPRI.lastName = Utils.GenerateRandomString(5);
             aPRI.dob = "1994-09-27";
             aPRI.email = email.Value;
             aPRI.phone = null;
@@ -44,7 +43,8 @@ namespace Euro.Viracor.Labalert.PatientPortalAPI.Test.APITest.Steps
             aPRI.addressLine2 = null;
             aPRI.report = reportW.Equals("with") ? PPCommmon.GetPdfInBytes(reportName) : null;
             Root root = new Root();
-            IRestResponse res = APIManager.PostRequest(api.Url, resource, JToken.FromObject(root.AddPatientReportInfo(aPRI)), Autherization);
+            string array = JToken.FromObject(root.AddPatientReportInfo(aPRI)).ToString();
+            IRestResponse res = APIManager.PostRequest(api.Url, resource, array, Autherization);
             ScenarioContext.Current[key] = res.StatusCode.ToString();
         }
 
@@ -52,6 +52,9 @@ namespace Euro.Viracor.Labalert.PatientPortalAPI.Test.APITest.Steps
         public void ThenVerifyThatResposnseCodeIs(string key, string value)
         {
             string resCode = ScenarioContext.Current[key].ToString();
+            var mailinator = new Mailinator.Client(Autherization);
+            var test = mailinator.GetInboxAsync("amrithatest10");
+            var result = test.Result;
             Assert.AreEqual(value.ToUpper(), resCode.ToUpper());
         }
     }

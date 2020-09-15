@@ -212,8 +212,8 @@ namespace Euro.Core.Automation.Transformation
         public static string GenerateRandomEmailWithDomain(string domain)
         {
             Random randomGenerator = new Random();
-            int randomInt = randomGenerator.Next(10000);
-            string email = $"username{randomInt}@{domain}";
+            int randomInt = randomGenerator.Next(1000000000);
+            string email = $"user{randomInt}@{domain}";
             return email;
         }
 
