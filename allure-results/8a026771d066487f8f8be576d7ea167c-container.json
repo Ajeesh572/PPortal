@@ -1,0 +1,103 @@
+{
+  "uuid": "db6a175e821b45eda82dae01ce289b7e",
+  "children": [
+    "691c6747084a4c1fbf7bba363a07c619"
+  ],
+  "befores": [
+    {
+      "name": "GetInfoScenario [1]",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600334452255,
+      "stop": 1600334452268
+    }
+  ],
+  "afters": [
+    {
+      "name": "AfterScenarioCheckSoftAsserts [1]",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600334453661,
+      "stop": 1600334453661
+    },
+    {
+      "name": "AfterScenarioRetry [3]",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600334453661,
+      "stop": 1600334453661
+    },
+    {
+      "name": "AfterScenarioAddResultTestCaseInTestRail [3]",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600334453661,
+      "stop": 1600334454358
+    },
+    {
+      "name": "AfterScenarioScreenshot [4]",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600334454358,
+      "stop": 1600334454358
+    },
+    {
+      "name": "AfterScenarioBrowserCheck [1001]",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600334454358,
+      "stop": 1600334454364
+    }
+  ],
+  "links": [],
+  "start": 1600334452255,
+  "stop": 1600335497581
+}

@@ -1,0 +1,68 @@
+{
+  "uuid": "ae4a2c36cd8b4f57997ec8e53cb84b40",
+  "historyId": "1 Create Users and set Password Report first",
+  "fullName": "1 Create Users and set Password Report first",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "IN01LAP81369"
+    },
+    {
+      "name": "feature",
+      "value": "CreateUsersForOTP"
+    },
+    {
+      "name": "tag",
+      "value": "api"
+    }
+  ],
+  "links": [],
+  "name": "1 Create Users and set Password Report first",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I send report \"Ajeesh kv COVID-19 IgG Test Report - 285.pdf\" for the user \"User\" with email \"testuserotp2297@dispostable.com\" for Bu \"NTD\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600434456899,
+      "stop": 1600434458776
+    },
+    {
+      "name": "When  I added User creds username \"User\" password \"Eurofins@2020\" and number of reports added \"1\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600434458776,
+      "stop": 1600434458780
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1600434456899,
+  "stop": 1600434458780
+}

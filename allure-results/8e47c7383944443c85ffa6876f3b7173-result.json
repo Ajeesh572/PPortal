@@ -1,0 +1,113 @@
+{
+  "uuid": "325604027f5d4097b1ecedb4b85c4d45",
+  "historyId": "10 Create Users and set Password Report first",
+  "fullName": "10 Create Users and set Password Report first",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "IN01LAP81369"
+    },
+    {
+      "name": "feature",
+      "value": "UserCreationNTDBU"
+    },
+    {
+      "name": "tag",
+      "value": "api"
+    }
+  ],
+  "links": [],
+  "name": "10 Create Users and set Password Report first",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I send report \"Ajeesh kv COVID-19 IgG Test Report - 285.pdf\" for the user \"User\" with email \"@GenerateRandomEmailWithDomain(dispostable.com)\" for Bu \"NTD\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600403475061,
+      "stop": 1600403483966
+    },
+    {
+      "name": "When  I Create User \"User\" and note referenceId \"refId\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600403483966,
+      "stop": 1600403491331
+    },
+    {
+      "name": "And  I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600403491332,
+      "stop": 1600403492542
+    },
+    {
+      "name": "And  I add \"1\" reports for user \"User\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600403492542,
+      "stop": 1600403493865
+    },
+    {
+      "name": "And  I added User creds username \"User\" password \"Eurofins@2020\" and number of reports added \"1\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600403493865,
+      "stop": 1600403493877
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1600403475050,
+  "stop": 1600403493887
+}

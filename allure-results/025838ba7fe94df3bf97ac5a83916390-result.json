@@ -1,0 +1,115 @@
+{
+  "uuid": "b7ec5847c5da44779696b058524f3b0f",
+  "historyId": "10 Create Users and set Password Report first",
+  "fullName": "10 Create Users and set Password Report first",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "IN01LAP81369"
+    },
+    {
+      "name": "feature",
+      "value": "UserCreationNTDBU"
+    },
+    {
+      "name": "tag",
+      "value": "api"
+    }
+  ],
+  "links": [],
+  "name": "10 Create Users and set Password Report first",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Object reference not set to an instance of an object.",
+    "trace": "System.NullReferenceException: Object reference not set to an instance of an object.\r\n   at Euro.PatientPortal.PatientPortalAPI.Test.APITest.Steps.CreateUserSteps.WhenICreateUserAndNoteReferenceId(String userKey, String refKey) in C:\\CodeBases\\PatientPortal\\PPortal\\Euro.PatientPortal\\PatientPortalAPI\\Test\\APITest\\Steps\\CreateUserSteps.cs:line 130\r\n   at lambda_method(Closure , IContextManager , String , String )\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I send report \"Ajeesh kv COVID-19 IgG Test Report -286.pdf\" for the user \"User\" with email \"@GenerateRandomEmailWithDomain(dispostable.com)\" for Bu \"NTD\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600342198913,
+      "stop": 1600342199847
+    },
+    {
+      "name": "When  I Create User \"User\" and note referenceId \"refId\"",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600342199847,
+      "stop": 1600342201790
+    },
+    {
+      "name": "And  I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600342201790,
+      "stop": 1600342201790
+    },
+    {
+      "name": "And  I add \"4\" reports for user \"User\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600342201790,
+      "stop": 1600342201790
+    },
+    {
+      "name": "And  I added User creds username \"User\" password \"Eurofins@2020\" and number of reports added \"4\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600342201790,
+      "stop": 1600342201790
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1600342198913,
+  "stop": 1600342201790
+}

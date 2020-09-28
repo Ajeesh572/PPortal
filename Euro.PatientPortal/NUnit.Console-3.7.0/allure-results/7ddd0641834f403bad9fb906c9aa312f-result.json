@@ -1,0 +1,115 @@
+{
+  "uuid": "92e2e29dfda944efbb41d3ddf8e8ed8b",
+  "historyId": "3 Create Users and set Password Report first",
+  "fullName": "3 Create Users and set Password Report first",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "IN01LAP81369"
+    },
+    {
+      "name": "feature",
+      "value": "UserCreationNTDBU"
+    },
+    {
+      "name": "tag",
+      "value": "api"
+    }
+  ],
+  "links": [],
+  "name": "3 Create Users and set Password Report first",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Could not find a part of the path 'C:\\CodeBases\\PatientPortal\\PPortal\\Euro.PatientPortal\\NUnit.Console-3.7.0\\Euro.PatientPortal\\TestPdfs\\Ajeesh kv COVID-19 IgG Test Report -286.pdf'.",
+    "trace": "System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\\CodeBases\\PatientPortal\\PPortal\\Euro.PatientPortal\\NUnit.Console-3.7.0\\Euro.PatientPortal\\TestPdfs\\Ajeesh kv COVID-19 IgG Test Report -286.pdf'.\r\n   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\r\n   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)\r\n   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)\r\n   at System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)\r\n   at Euro.PatientPortal.PatientPortalAPI.Main.API.Common.PPCommmon.GetPdfInBytes(String pdfName) in C:\\CodeBases\\PatientPortal\\PPortal\\Euro.PatientPortal\\PatientPortalAPI\\Main\\API\\Common\\PPCommmon.cs:line 21\r\n   at Euro.PatientPortal.PatientPortalAPI.Test.APITest.Steps.AddReportSteps.GivenISendReportForTheUser(String reportName, String userKey, StringValue emailAddress, String bu) in C:\\CodeBases\\PatientPortal\\PPortal\\Euro.PatientPortal\\PatientPortalAPI\\Test\\APITest\\Steps\\AddReportSteps.cs:line 135\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I send report \"Ajeesh kv COVID-19 IgG Test Report -286.pdf\" for the user \"User\" with email \"@GenerateRandomEmailWithDomain(dispostable.com)\" for Bu \"NTD\"",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600413655225,
+      "stop": 1600413655236
+    },
+    {
+      "name": "When  I Create User \"User\" and note referenceId \"refId\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600413655236,
+      "stop": 1600413655237
+    },
+    {
+      "name": "And  I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600413655237,
+      "stop": 1600413655237
+    },
+    {
+      "name": "And  I add \"6\" reports for user \"User\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600413655237,
+      "stop": 1600413655237
+    },
+    {
+      "name": "And  I added User creds username \"User\" password \"Eurofins@2020\" and number of reports added \"6\"",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600413655237,
+      "stop": 1600413655237
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1600413655225,
+  "stop": 1600413655237
+}

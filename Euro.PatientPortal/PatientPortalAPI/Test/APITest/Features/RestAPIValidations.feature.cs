@@ -72,11 +72,8 @@ namespace Euro.PatientPortal.PatientPortalAPI.Test.APITest.Features
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("1 Verify AddPatientReportInfo api works fine Without Report", exampleTags);
 #line 5
  this.ScenarioSetup(scenarioInfo);
-#line 6
- testRunner.When(string.Format("user hits api \"AddPatientReportInfo\" without Report \"{0}\" for BU \"{1}\" and email " +
-                        "\"{2}\" and save respose code by key \"resKey\"", reportname, bu, email), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 7
- testRunner.Then("verify that resposnse code \"resKey\" is \"ok\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 8
+ testRunner.When("Verify Gmail", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -87,12 +84,12 @@ namespace Euro.PatientPortal.PatientPortalAPI.Test.APITest.Features
         public virtual void _2VerifyAddPatientReportInfoApiWorksFineWithReport(string bu, string email, string reportname, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("2 Verify AddPatientReportInfo api works fine With Report", exampleTags);
-#line 13
-   this.ScenarioSetup(scenarioInfo);
 #line 14
+   this.ScenarioSetup(scenarioInfo);
+#line 15
  testRunner.When(string.Format("user hits api \"AddPatientReportInfo\" with Report \"{0}\" for BU \"{1}\" and email \"{2" +
                         "}\" and save respose code by key \"resKey\"", reportname, bu, email), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 15
+#line 16
  testRunner.Then("verify that resposnse code \"resKey\" is \"ok\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

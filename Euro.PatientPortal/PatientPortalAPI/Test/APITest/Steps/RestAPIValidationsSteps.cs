@@ -57,5 +57,11 @@ namespace Euro.Viracor.Labalert.PatientPortalAPI.Test.APITest.Steps
             var result = test.Result;
             Assert.AreEqual(value.ToUpper(), resCode.ToUpper());
         }
+
+        [When(@"Verify Gmail")]
+        public void WhenVerifyGmail()
+        {
+            GmailManager gmail = new GmailManager("subjct", "Pan Application");
+        }
     }
 }

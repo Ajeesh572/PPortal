@@ -108,7 +108,7 @@
             string emailId = addPatientReportInfo.email;
             user.firstName = emailId.Split('@')[0];
             user.lastName = emailId.Split('@')[0];
-            user.dob = "1994-09-27";
+            user.dob = addPatientReportInfo.dob;
             user.email = emailId;
             user.phone = (string)addPatientReportInfo.phone;
             user.city = addPatientReportInfo.city;

@@ -10,6 +10,7 @@ namespace Euro.PatientPortal.PatientPortalAPI.Test.APITest.Steps
     using Euro.Core.Automation.Utilities;
     using Euro.Core.Automation.Utilities.API;
     using Euro.Core.Automation.Utilities.JsonManager;
+    using Euro.CP.Main.Utils;
     using Euro.PatientPortal.PatientPortalAPI.Main.API.Common;
     using Euro.PatientPortal.PatientPortalAPI.Main.API.JSONObject;
     using Euro.Viracor.Labalert.PatientPortalAPI.Main;
@@ -89,16 +90,17 @@ namespace Euro.PatientPortal.PatientPortalAPI.Test.APITest.Steps
         [When(@"I added User creds username ""(.*)"" password ""(.*)"" and number of reports added ""(.*)""")]
         public void WhenIAddedUserCredsUsernamePasswordAndNumberOfReportsAdded(string userKey, string password, int numOfReports=1)
         {
+           
             int reports = numOfReports + 1;
             try
             {
                 CreateUser user = ScenarioContext.Current.Get<CreateUser>(userKey);
-                CsvData.LogCsvSummary(string.Format("{0}", string.Empty + "," + user.email + "," + user.firstName + "," + user.lastName + "," + user.dob + "," + user.ZipCode + "," + user.phone + "," + password + "," + reports));
+                CsvData.LogCsvSummary($"{string.Empty},{user.email},{user.firstName},{user.lastName},{user.dob},{user.ZipCode},{user.phone},{password},{reports}");
             }
             catch
             {
-                AddPatientReportInfo aPRI= ScenarioContext.Current.Get<AddPatientReportInfo>(userKey);
-                CsvData.LogCsvSummary(string.Format("{0}", string.Empty + "," + aPRI.email + "," + aPRI.firstName + "," + aPRI.lastName + "," + aPRI.dob + "," + aPRI.zipCode + "," + aPRI.phone + "," + password + "," + reports));
+                AddPatientReportInfo user = ScenarioContext.Current.Get<AddPatientReportInfo>(userKey);
+                CsvData.LogCsvSummary($"{string.Empty},{user.email},{user.firstName},{user.lastName},{user.dob},{user.zipCode},{user.phone},{password},{reports}");
             }
         }
 
@@ -122,7 +124,7 @@ namespace Euro.PatientPortal.PatientPortalAPI.Test.APITest.Steps
             aPRI.bu = bu;
             aPRI.firstName = emailAddress.Value.Split('@')[0];
             aPRI.lastName = aPRI.firstName;
-            aPRI.dob = "1994-09-27";
+            aPRI.dob = "2000-01-01";
             aPRI.email = emailAddress.Value;
             aPRI.phone = CommonFunctions.GetRandomPhoneNumber();
             aPRI.zipCode = "11747";

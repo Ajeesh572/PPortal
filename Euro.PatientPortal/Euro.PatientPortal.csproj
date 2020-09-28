@@ -222,6 +222,15 @@
     <Compile Include="PatientPortalAPI\Main\API\JSONObject\CreateUser.cs" />
     <Compile Include="PatientPortalAPI\Main\API\JSONObject\ForgotPassword.cs" />
     <Compile Include="PatientPortalAPI\Main\Helpers\ViracorHelpers.cs" />
+    <Compile Include="PatientPortalAPI\Main\Hooks\CsvHooks.cs" />
+    <Compile Include="PatientPortalAPI\Main\Reporting\DriverHandler.cs" />
+    <Compile Include="PatientPortalAPI\Main\Reporting\Reporting.cs" />
+    <Compile Include="PatientPortalAPI\Main\Reporting\RUtils.cs" />
+    <Compile Include="PatientPortalAPI\Main\Reporting\ScreenShots.cs" />
+    <Compile Include="PatientPortalAPI\Main\Reporting\SoapUtils.cs" />
+    <Compile Include="PatientPortalAPI\Main\Reporting\TestBaseFunc.cs" />
+    <Compile Include="PatientPortalAPI\Main\Reporting\TestBaseFunctions.cs" />
+    <Compile Include="PatientPortalAPI\Main\Reporting\TestBaseWithBrowserOpenPerSuite.cs" />
     <Compile Include="PatientPortalAPI\Test\APITest\Features\RegisterUsers.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

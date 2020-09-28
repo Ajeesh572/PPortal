@@ -1,0 +1,55 @@
+{
+  "uuid": "4785c10f7edb4e5b9a98ac6fdf7c31b2",
+  "historyId": "1 Create Users and set Password Report first",
+  "fullName": "1 Create Users and set Password Report first",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "IN01LAP81369"
+    },
+    {
+      "name": "feature",
+      "value": "CreateUsersForOTP"
+    },
+    {
+      "name": "tag",
+      "value": "api"
+    }
+  ],
+  "links": [],
+  "name": "1 Create Users and set Password Report first",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "The given key was not present in the dictionary.",
+    "trace": "System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.\r\n   at System.ThrowHelper.ThrowKeyNotFoundException()\r\n   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)\r\n   at TechTalk.SpecFlow.SpecFlowContext.Get[T](String key)\r\n   at Euro.PatientPortal.PatientPortalAPI.Test.APITest.Steps.AddReportSteps.WhenIAddedUserCredsUsernamePasswordAndNumberOfReportsAdded(String userKey, String password, Int32 numOfReports) in C:\\CodeBases\\PatientPortal\\PPortal\\Euro.PatientPortal\\PatientPortalAPI\\Test\\APITest\\Steps\\AddReportSteps.cs:line 102\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "When  I added User creds username \"User\" password \"Eurofins@2020\" and number of reports added \"1\"",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1600412818679,
+      "stop": 1600412818681
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1600412818679,
+  "stop": 1600412818681
+}

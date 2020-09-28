@@ -202,20 +202,20 @@
            "APIs": [
                 {
                     "Name": "REPORT",
-                    "Url": "https://mylabport-service-uat.azurefd.net/api/Report/"
+                    "Url": "https://eurofins-clindx-pp-web-uat.azurewebsites.net/api/Report/"
                 },
                 {
                     "Name": "USER",
-                    "Url": "https://mylabport-service-uat.azurefd.net/api/User/"
+                    "Url": "https://eurofins-clindx-pp-web-uat.azurewebsites.net/api/User/"
                 },
                 {
                     "Name": "IDMUSER",
-                    "Url": "https://mylabport-idm-uat.azurefd.net/api/User/"
+                    "Url": "https://eurofins-clindx-pp-idm-uat.azurewebsites.net/api/User/"
                 },
                 {
                     "Name": "PASSWORD",
-                    "Url":"https://mylabport-idm-uat.azurefd.net/api/Authentication/"
-				}
+                    "Url":"https://eurofins-clindx-pp-idm-uat.azurewebsites.net/api/Authentication/"
+                }
             ]
         }
     ]

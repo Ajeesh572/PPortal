@@ -65,331 +65,284 @@ namespace Euro.PatientPortal.PatientPortalAPI.Test.APITest.Features.Usercreation
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("1 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _1CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("1 Create Users and set Password Report first", @__tags);
-#line 7
-  this.ScenarioSetup(scenarioInfo);
-#line 9
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 11
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 12
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 13
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("2 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _2CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("2 Create Users and set Password Report first", @__tags);
-#line 29
- this.ScenarioSetup(scenarioInfo);
-#line 31
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 32
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 33
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 34
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 35
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("3 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _3CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("3 Create Users and set Password Report first", @__tags);
-#line 51
- this.ScenarioSetup(scenarioInfo);
-#line 53
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 54
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 55
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 56
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 57
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("4 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _4CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("4 Create Users and set Password Report first", @__tags);
-#line 73
- this.ScenarioSetup(scenarioInfo);
-#line 75
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 76
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 77
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 78
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 79
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("5 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _5CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("5 Create Users and set Password Report first", @__tags);
-#line 95
- this.ScenarioSetup(scenarioInfo);
-#line 97
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 98
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 99
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 100
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 101
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("6 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _6CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("6 Create Users and set Password Report first", @__tags);
-#line 117
- this.ScenarioSetup(scenarioInfo);
-#line 119
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 120
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 121
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 122
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 123
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("7 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _7CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("7 Create Users and set Password Report first", @__tags);
-#line 139
- this.ScenarioSetup(scenarioInfo);
-#line 141
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 142
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 143
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 144
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 145
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("8 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _8CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("8 Create Users and set Password Report first", @__tags);
-#line 161
- this.ScenarioSetup(scenarioInfo);
-#line 163
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 164
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 165
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 166
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 167
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("9 Create Users and set Password Report first")]
         [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _9CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport1@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport2@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport3@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport4@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport5@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport6@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport7@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport8@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport9@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport10@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport11@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport12@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport13@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport14@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport15@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport16@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport17@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport18@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport19@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport20@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport21@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport22@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport23@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport24@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport25@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport26@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport27@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport28@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport29@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport30@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport31@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport32@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport33@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport34@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport35@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport36@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport37@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport38@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport39@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport40@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport41@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport42@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport43@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport44@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport45@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport46@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport47@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport48@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport49@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport50@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport51@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport52@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport53@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport54@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport55@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport56@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport57@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport58@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport59@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport60@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport61@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport62@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport63@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport64@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport65@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport66@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport67@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport68@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport69@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport70@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport71@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport72@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport73@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport74@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport75@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport76@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport77@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport78@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport79@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport80@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport81@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport82@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport83@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport84@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport85@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport86@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport87@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport88@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport89@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport90@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport91@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport92@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport93@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport94@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport95@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport96@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport97@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport98@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport99@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport100@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport101@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport102@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport103@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport104@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport105@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport106@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport107@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport108@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport109@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport110@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport111@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport112@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport113@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport114@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport115@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport116@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport117@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport118@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport119@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport120@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport121@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport122@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport123@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport124@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport125@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport126@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport127@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport128@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport129@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport130@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport131@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport132@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport133@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport134@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport135@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport136@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport137@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport138@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport139@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport140@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport141@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport142@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport143@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport144@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport145@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport146@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport147@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport148@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport149@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport150@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport151@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport152@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport153@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport154@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport155@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport156@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport157@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport158@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport159@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport160@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport161@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport162@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport163@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport164@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport165@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport166@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport167@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport168@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport169@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport170@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport171@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport172@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport173@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport174@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport175@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport176@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport177@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport178@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport179@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport180@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport181@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport182@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport183@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport184@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport185@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport186@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport187@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport188@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport189@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport190@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport191@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport192@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport193@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport194@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport195@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport196@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport197@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport198@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport199@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport200@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport201@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport202@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport203@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport204@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport205@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport206@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport207@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport208@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport209@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport210@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport211@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport212@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport213@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport214@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport215@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport216@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport217@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport218@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport219@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport220@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport221@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport222@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport223@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport224@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport225@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport226@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport227@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport228@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport229@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport230@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport231@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport232@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport233@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport234@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport235@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport236@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport237@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport238@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport239@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport240@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport241@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport242@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport243@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport244@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport245@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport246@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport247@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport248@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport249@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport250@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport251@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport252@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport253@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport254@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport255@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport256@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport257@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport258@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport259@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport260@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport261@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport262@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport263@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport264@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport265@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport266@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport267@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport268@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport269@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport270@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport271@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport272@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport273@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport274@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        [NUnit.Framework.TestCaseAttribute("NTD", "patientreport275@dispostable.com", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", null)]
+        public virtual void _9CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "api"};
@@ -398,253 +351,17 @@ namespace Euro.PatientPortal.PatientPortalAPI.Test.APITest.Features.Usercreation
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("9 Create Users and set Password Report first", @__tags);
-#line 183
+#line 7
  this.ScenarioSetup(scenarioInfo);
-#line 185
+#line 9
  testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 186
+#line 10
  testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 187
+#line 11
  testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 188
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 189
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("10 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _10CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("10 Create Users and set Password Report first", @__tags);
-#line 205
- this.ScenarioSetup(scenarioInfo);
-#line 207
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 208
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 209
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 210
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 211
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("11 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _11CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("11 Create Users and set Password Report first", @__tags);
-#line 227
- this.ScenarioSetup(scenarioInfo);
-#line 229
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 230
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 231
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 232
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 233
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("12 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _12CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("12 Create Users and set Password Report first", @__tags);
-#line 249
- this.ScenarioSetup(scenarioInfo);
-#line 251
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 252
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 253
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 254
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 255
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("13 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _13CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("13 Create Users and set Password Report first", @__tags);
-#line 271
- this.ScenarioSetup(scenarioInfo);
-#line 273
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 274
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 275
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 276
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 277
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("14 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _14CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("14 Create Users and set Password Report first", @__tags);
-#line 293
- this.ScenarioSetup(scenarioInfo);
-#line 295
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 296
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 297
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 298
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 299
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("15 Create Users and set Password Report first")]
-        [NUnit.Framework.CategoryAttribute("api")]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "1", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "2", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "3", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "4", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "6", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "7", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report -286.pdf", "8", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "9", null)]
-        [NUnit.Framework.TestCaseAttribute("NTD", "@GenerateRandomEmailWithDomain(dispostable.com)", "Ajeesh kv COVID-19 IgG Test Report - 285.pdf", "10", null)]
-        public virtual void _15CreateUsersAndSetPasswordReportFirst(string bu, string email, string reportname, string numOfReports, string[] exampleTags)
-        {
-            string[] @__tags = new string[] {
-                    "api"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("15 Create Users and set Password Report first", @__tags);
-#line 315
- this.ScenarioSetup(scenarioInfo);
-#line 317
- testRunner.Given(string.Format("I send report \"{0}\" for the user \"User\" with email \"{1}\" for Bu \"{2}\"", reportname, email, bu), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 318
- testRunner.When("I Create User \"User\" and note referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 319
- testRunner.And("I set password \"Eurofins@2020\" for created User \"User\" with referenceId \"refId\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 320
- testRunner.And(string.Format("I add \"{0}\" reports for user \"User\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 321
- testRunner.And(string.Format("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
-                        " added \"{0}\"", numOfReports), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 13
+ testRunner.And("I added User creds username \"User\" password \"Eurofins@2020\" and number of reports" +
+                    " added \"0\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
